@@ -1,0 +1,15 @@
+Cat_Outlook,Cat_Temperature,Cat_humidity,Cat_windy,Outcome_Play
+Sunny,hot,high,FALSE,no
+Sunny,hot,high,TRUE,no
+Overcast,hot,high,FALSE,yes
+Rainy,mild,high,FALSE,yes
+Rainy,cool,normal,FALSE,yes
+Rainy,cool,normal,TRUE,no
+Overcast,cool,normal,TRUE,yes
+Sunny,mild,high,FALSE,no
+Sunny,cool,normal,FALSE,yes
+Rainy,mild,normal,FALSE,yes
+Sunny,mild,normal,TRUE,yes
+Overcast,mild,high,TRUE,yes
+Overcast,hot,normal,FALSE,yes
+Rainy,mild,high,TRUE,no
