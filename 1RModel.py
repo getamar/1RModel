@@ -132,64 +132,11 @@ final_list = zip(header_list, Error_Percent, scan_list_array)
 print '\nAll options with with error list as follows'
 print final_list
 print '\nWith least error, chosen RULE from TRAINING data is as follows'
-print rule_list
 rule_list = cal_processed_output(list(final_list[Error_Percent.index(min(Error_Percent))]))
+print rule_list
 live_prediction(rule_list)
 
 
 
 
 
-
-
-
-
-
-
-
-
-'''CSV file is read with a header as a row and End row. Hence no. of rows will be r+2 in 0th index
-csv file gives column in shape in 1st index'''
-
-'''
-category_set = list(set(data_np_array[0][1:row_size+1]))
-out_set = list(set(data_np_array[outcome_index][1:row_size+1]))
-out_set = tuple(out_set)
-
-print "There are %s possible in the outcome and they are %s, happy with the learning so far?" %(len(out_set),out_set)
-
-scan_list = []
-Initiate the scan_list with category items * outcome items
-for i in range(0, len(category_set)):
-    for j in range(0, len(out_set)):
-        scan_list.append(0)
-
-Output should be as follows, OUTLOOK 
-
-('OUTLOOK, 
-[
-dic
-{
-'SUNNY':'play'
-'OVERCAST':'no play'
-'RAIN':'play
-}
-
-Training/prediction mode & Live mode
-
-my_code.build_model('training_data.csv'
-    print self explanatory
-returns optimal rule_encoded as above while printing out how it worked out this as the optimal rule
-
-my_code.live('live_data.csv',optimal_rule)
-
-returns live_data.csv with the last column fillen up according to optimal_tule
-
-----------------------------------
-Example of running your code:
-
-selena_optimal_rule = selena_code.build_model('weather_data_training.csv')
-
-selena_predicted_outcome = selena_code.live('weather_data_live.csv', selena_optimal_rule)
-
-'''
